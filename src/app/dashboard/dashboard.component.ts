@@ -61,16 +61,16 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.chartColor = "#FFFFFF";
-    this.canvas = document.getElementById("bigDashboardChart");
-    this.ctx = this.canvas.getContext("2d");
+  //  this.canvas = document.getElementById("bigDashboardChart");
+  //   this.ctx = this.canvas.getContext("2d");
 
-    this.gradientStroke = this.ctx.createLinearGradient(500, 0, 100, 0);
-    this.gradientStroke.addColorStop(0, '#80b6f4');
-    this.gradientStroke.addColorStop(1, this.chartColor);
+  //   this.gradientStroke = this.ctx.createLinearGradient(500, 0, 100, 0);
+  //   this.gradientStroke.addColorStop(0, '#80b6f4');
+  //   this.gradientStroke.addColorStop(1, this.chartColor);
 
-    this.gradientFill = this.ctx.createLinearGradient(0, 200, 0, 50);
-    this.gradientFill.addColorStop(0, "rgba(128, 182, 244, 0)");
-    this.gradientFill.addColorStop(1, "rgba(255, 255, 255, 0.24)");
+  //   this.gradientFill = this.ctx.createLinearGradient(0, 200, 0, 50);
+  //   this.gradientFill.addColorStop(0, "rgba(128, 182, 244, 0)");
+  //   this.gradientFill.addColorStop(1, "rgba(255, 255, 255, 0.24)");
 
     this.lineBigDashboardChartData = [
         {

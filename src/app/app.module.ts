@@ -10,8 +10,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { ComponentsModule } from './components/components.module';
 
 import { AppComponent } from './app.component';
+import { AuthService } from './auth/auth.service';
 
-import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { Layout1Component } from './layouts/layout1/layout1.component';
+import { Layout2Component } from './layouts/layout2/layout2.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
   imports: [
@@ -25,10 +28,12 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent,
+    Layout1Component,
+    Layout2Component,
+    UserProfileComponent
 
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
